@@ -21,16 +21,19 @@ class MainActivity : AppCompatActivity() {
 
         cardView1!!.setOnClickListener {
             val intent = Intent(this,DetailActivity::class.java)
+            intent.putExtra("order","Blue")
             startActivity(intent)
         }
 
         cardView2!!.setOnClickListener {
             val intent = Intent(this,DetailActivity::class.java)
+            intent.putExtra("order","Red")
             startActivity(intent)
         }
 
         cardView3!!.setOnClickListener {
             val intent = Intent(this,DetailActivity::class.java)
+            intent.putExtra("order","White")
             startActivity(intent)
         }
     }
